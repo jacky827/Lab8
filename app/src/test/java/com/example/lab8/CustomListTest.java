@@ -50,6 +50,7 @@ public class CustomListTest {
     }
     @Test
     public void deleteCityTest() {
+        list = MockCityList();
         list.addCity(new City("Montreal", "QC"));
         list.addCity(new City("Vancouver", "BC"));
         list.addCity(new City("Toronto", "ON"));
