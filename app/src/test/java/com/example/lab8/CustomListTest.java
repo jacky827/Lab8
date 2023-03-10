@@ -24,9 +24,8 @@ public class CustomListTest {
      * create a mocklist for my citylist
      * @return
      */
-    public CustomList MockCityList(){
-        list = new CustomList(null,new ArrayList<>());
-        return list;
+    public void setUp() {
+        list = new CustomList(null, new ArrayList<>());
     }
     /**
      * get the size of the list
@@ -36,7 +35,6 @@ public class CustomListTest {
      */
     @Test
     public void addCityTest(){
-        list = MockCityList();
         int listSize = list.getCount();
         list.addCity(new City("Estevan", "SK"));
         assertEquals(list.getCount(),listSize + 1);
